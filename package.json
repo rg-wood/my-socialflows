@@ -1,0 +1,31 @@
+{
+  "name": "socialflows",
+  "private": true,
+  "description": "Automated cross-posting for a fractured web",
+  "version": "1.0.0",
+  "author": "Ric Wood <ric@grislyeye.com>",
+  "devDependencies": {
+    "actionsflow": "^1.12.1"
+  },
+  "keywords": [
+    "actionsflow",
+    "workflow"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "build": "actionsflow build",
+    "start": "actionsflow start -- -s TWITTER_CONSUMER_API_KEY -s TWITTER_CONSUMER_API_SECRET -s TWITTER_ACCESS_TOKEN -s TWITTER_ACCESS_TOKEN_SECRET -s BLUESKY_PASSWORD",
+    "watch": "actionsflow start -w -- -s TWITTER_CONSUMER_API_KEY -s TWITTER_CONSUMER_API_SECRET -s TWITTER_ACCESS_TOKEN -s TWITTER_ACCESS_TOKEN_SECRET -s BLUESKY_PASSWORD",
+    "clean": "actionsflow clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/actionsflow/actionsflow-workflow-default"
+  },
+  "bugs": {
+    "url": "https://github.com/socialflows/socialflows/issues"
+  },
+  "dependencies": {
+    "@actionsflow/trigger-activitypub": "^1.0.2"
+  }
+}
